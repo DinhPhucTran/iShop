@@ -127,6 +127,7 @@ button.navbar-toggle.pull-left {
 .category-menu-item span {
   display: block;
   margin-top: 7px;
+  font-size: 13px;
 }
 
 #menu-item-phone {
