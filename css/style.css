@@ -13,12 +13,22 @@ body {
 }
 
 .red-bottom-border {
-  border-bottom: 5px solid red;
+  border-bottom: 5px solid #ED3C2B;
   margin-bottom: 20px;
 }
 
 .green-bottom-border {
   border-bottom: 5px solid #27ae61;
+  margin-bottom: 20px;
+}
+
+.orange-bottom-border {
+  border-bottom: 5px solid orange;
+  margin-bottom: 20px;
+}
+
+.violet-bottom-border {
+  border-bottom: 5px solid #8f44ad;
   margin-bottom: 20px;
 }
 
@@ -342,7 +352,7 @@ button.navbar-toggle.pull-left {
 /*======== Product slider ===========*/
 .hot-deal {
     margin-top: 20px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .hovereffect {
@@ -553,32 +563,66 @@ button.navbar-toggle.pull-left {
 
 .section-bg-green {
   width: 220px;
-	height: 2.5vw;
+	height: 33px;
 	background: #27ae61;
 	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-  position: absolute;
+  /*position: absolute;
   top: 0;
-  left: 0;
+  left: 0;*/
+  position: relative;
+  bottom: -34px;
+  left: -10px;
   z-index: -1;
 }
 
 .section-bg-red {
   width: 220px;
-	height: 2.5vw;
-	background: red;
+	height: 33px;
+	background: #ED3C2B;
 	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
   clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
-  position: absolute;
+  /*position: absolute;
   top: 0;
-  left: 0;
+  left: 0;*/
+  position: relative;
+  bottom: -34px;
+  left: -10px;
   z-index: -1;
 }
 
-.carousel-indicators-numbers {
-  position: absolute;
-  bottom: -50px;
-  right: -200px;
+.section-bg-orange {
+  width: 220px;
+	height: 33px;
+	background: orange;
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  /*position: absolute;
+  top: 0;
+  left: 0;*/
+  position: relative;
+  bottom: -34px;
+  left: -10px;
+  z-index: -1;
+}
+
+.section-bg-violet {
+  width: 220px;
+	height: 33px;
+	background: #8f44ad;
+	-webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  z-index: -1;
+}
+
+/*===== Carousel indicator numbers =====*/
+.indicator-numbers {
+  display: block;
+  position: relative;
+  top: 5vw;
+  float: right;
+  right: -3vw;
+  width: 190px;
 }
 
 .carousel-indicators-numbers li {
@@ -598,5 +642,61 @@ button.navbar-toggle.pull-left {
   margin: 0 2px;
   width: 30px;
   height: 30px;
-  background-color: #337ab7;
+  background-color: #ED3C2B;
+}
+
+/*======= Side news =======*/
+.side-news {
+  margin-top: 15px;
+  background-color: white;
+  padding: 5px;
+  margin-left: -10px;
+  margin-right: 0px;
+}
+
+.side-news a:hover {
+  text-decoration: none;
+  color: blue;
+}
+
+.side-news a {
+  color: #666;
+}
+
+/*========= Footer =========*/
+.footer {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.footer a, .footer span {
+  display: block;
+  color: #fff;
+}
+
+/*======= Back-to-top button =========*/
+#back-to-top {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 9999;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    line-height: 30px;
+    background: orange;
+    color: white;
+    cursor: pointer;
+    border: 0;
+    text-decoration: none;
+    transition: opacity 0.2s ease-out;
+    opacity: 0;
+    font-weight: bold;
+}
+#back-to-top:hover {
+    background: #878787;
+    color:#000;
+}
+#back-to-top.show {
+    opacity: 1;
 }
