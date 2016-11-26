@@ -82,6 +82,19 @@ button.navbar-toggle.pull-left {
     color: rgba(255, 255, 255, 1);
     background-color: rgba(0, 135, 68, 1);
 }
+#navbar-cart {
+  position: absolute;
+  right: 260px;
+  height: 100%;
+  padding: 10px;
+  margin-top: 0;
+}
+@media screen and (max-width: 500px) {
+   #navbar-cart {
+     margin-top: -7px;
+     padding: 12px;
+   }
+}
 #top-menu.navbar-default .navbar-nav>.active>a,
 #top-menu.navbar-default .navbar-nav>.active>a:hover,
 #top-menu.navbar-default .navbar-nav>.active>a:focus {
@@ -672,6 +685,13 @@ button.navbar-toggle.pull-left {
 .footer a, .footer span {
   display: block;
   color: #fff;
+  margin-bottom: 5px;
+}
+
+.footer i {
+  color: #fff;
+  margin-left: 5px;
+  font-size: 18px;
 }
 
 /*======= Back-to-top button =========*/
@@ -679,7 +699,7 @@ button.navbar-toggle.pull-left {
     position: fixed;
     bottom: 40px;
     right: 40px;
-    z-index: 9999;
+    z-index: 5;
     width: 32px;
     height: 32px;
     text-align: center;
@@ -699,4 +719,9 @@ button.navbar-toggle.pull-left {
 }
 #back-to-top.show {
     opacity: 1;
+}
+
+/*=========== Product detail page=============*/
+.yellow-star {
+  color: orange;
 }
